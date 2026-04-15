@@ -1,30 +1,83 @@
 body {
-    font-family: Arial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    background-color: #f4f7f6;
+    padding: 50px;
+    color: #333;
+}
+
+/* Contenedor principal (opcional si quieres centrar todo) */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 input {
-    padding: 10px;
+    padding: 12px;
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4CAF50;
 }
 
 button {
-    padding: 10px;
-    background-color: green;
+    padding: 12px 20px;
+    background-color: #4CAF50;
     color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
 }
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
 ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 li {
     cursor: pointer;
-    margin-bottom: 5px;
-    padding: 5px;
-    background-color: #f9f9f9;
-    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
 }
 
 li:hover {
-    background-color: #ffeaea; /* Color para indicar que se puede borrar */
+    background-color: #fff5f5; /* Tono rojizo suave */
+    border-color: #ffcccc;
+    transform: scale(1.02);
+    color: #d32f2f;
+}
+
+/* Estilo para cuando una tarea está completada (opcional) */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #f0f0f0;
 }
