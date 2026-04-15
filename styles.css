@@ -28,3 +28,19 @@ li {
 li:hover {
     background-color: #ffeaea; /* Color para indicar que se puede borrar */
 }
+li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+li button:hover {
+    background-color: #cc0000;
+}
+
+li {
+    margin-bottom: 10px;
+}
